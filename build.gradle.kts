@@ -12,9 +12,6 @@ repositories {
 dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0")
 
-    implementation("org.apache.logging.log4j:log4j-api:2.23.0")
-    implementation("org.apache.logging.log4j:log4j-core:2.23.0")
-
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 }
 

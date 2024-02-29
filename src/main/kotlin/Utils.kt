@@ -1,14 +1,16 @@
 package com.ataccama.example
 
-import org.apache.logging.log4j.LogManager
-import org.apache.logging.log4j.Logger
+import java.time.LocalTime
+import java.time.format.DateTimeFormatter
 import kotlin.time.measureTime
 
 /**
  * Prints message with time stamp and thread name.
  */
 fun say(message: String) {
-    Utils.logger.info(message)
+    val time = LocalTime.now().format(Utils.timePattern)
+    val thread = Thread.currentThread().name
+    println("$time [$thread] $message")
 }
 
 /**
@@ -20,5 +22,5 @@ fun measured(block: () -> Unit) {
 }
 
 object Utils {
-    val logger: Logger = LogManager.getLogger()
+    val timePattern: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss.SSS")
 }
