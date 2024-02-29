@@ -9,12 +9,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.runBlocking
 
 /**
- * # Flows
- *
- * - Flows are non-blocking, cold streams of data.
- * - They are similar to Java Streams and Kotlin Sequences in that they evaluate lazily.
- * - The main difference is that Flows respect the structured concurrency
- * and adhere to the cooperative cancellation of coroutines.
+ * # Exception handling in Flows
  */
 fun main() {
     val requests = flow {

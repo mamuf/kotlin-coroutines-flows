@@ -7,8 +7,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.runBlocking
 
 /**
- * # Exception handling in Flows
- *
+ * # Exception propagation in Flows
  */
 fun main() {
     val requests = flow {
