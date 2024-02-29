@@ -5,14 +5,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import kotlinx.coroutines.withContext
-import kotlin.concurrent.thread
-import kotlin.coroutines.CoroutineContext
-import kotlin.time.Duration
 import kotlin.time.Duration.Companion.seconds
-import kotlin.time.DurationUnit
-import kotlinx.coroutines.ThreadContextElement as ThreadContextElement1
-import kotlinx.coroutines.ThreadContextElement as ThreadContextElement
 
 /**
  * # Structured concurrency
