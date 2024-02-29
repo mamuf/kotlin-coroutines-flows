@@ -1,4 +1,4 @@
-package com.ataccama.example.com.ataccama.example.c14
+package com.ataccama.example.c14
 
 import com.ataccama.example.say
 import kotlinx.coroutines.CoroutineScope
@@ -41,12 +41,4 @@ fun main() {
         job.join()
         say("Done!")
     }
-}
-
-suspend fun work(name: String, duration: Duration) {
-    say("Launch $name")
-    withContext(Dispatchers.IO) {
-        Thread.sleep(duration.toLong(DurationUnit.MILLISECONDS))
-    }
-    say("Done $name")
 }

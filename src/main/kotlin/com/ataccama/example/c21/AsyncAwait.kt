@@ -1,4 +1,4 @@
-package com.ataccama.example.com.ataccama.example.c21
+package com.ataccama.example.c21
 
 import com.ataccama.example.measured
 import com.ataccama.example.say

@@ -1,4 +1,4 @@
-package com.ataccama.example.com.ataccama.example.c31
+package com.ataccama.example.c31
 
 import com.ataccama.example.say
 import kotlinx.coroutines.flow.catch

@@ -38,11 +38,3 @@ fun main() {
         say("Done!")
     }
 }
-
-suspend fun work(name: String, duration: Duration) {
-    say("Launch $name")
-    withContext(Dispatchers.IO) {
-        Thread.sleep(duration.toLong(DurationUnit.MILLISECONDS))
-    }
-    say("Done $name")
-}
